@@ -1,12 +1,14 @@
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { Fragment } from 'react'
+import { Itim } from '@next/font/google'
+
+// If loading a variable font, you don't need to specify the font weight
+const ccFont = Itim({ subsets: ['latin'], weight: '400' });
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Tiny Url', href: '#' },
+  { name: 'Short Url', href: '#' },
 ]
 export default function Navbar() {
   return (
@@ -21,12 +23,7 @@ export default function Navbar() {
               <div className="flex items-center flex-1">
                 <div className="flex items-center justify-between w-full md:w-auto">
                   <a href="#">
-                    <span className="sr-only">Workflow</span>
-                    <img
-                      className="w-auto h-8 sm:h-10"
-                      src="/img/logos/workflow-mark-teal-200-cyan-400.svg"
-                      alt=""
-                    />
+                    <h4 className={ccFont.className + ' h-12 pt-1 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700'}>srt.fege</h4>
                   </a>
                   <div className="flex items-center -mr-2 md:hidden">
                     <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
@@ -48,7 +45,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="hidden md:flex md:items-center md:space-x-6">
-                <a
+                {/* <a
                   href="#"
                   className="text-base font-medium text-white hover:text-gray-300"
                 >
@@ -59,7 +56,7 @@ export default function Navbar() {
                   className="inline-flex items-center px-4 py-2 text-base font-medium text-white bg-gray-600 border border-transparent rounded-md hover:bg-gray-700"
                 >
                   Start free trial
-                </a>
+                </a> */}
               </div>
             </nav>
           </div>
@@ -107,7 +104,7 @@ export default function Navbar() {
                       </a>
                     ))}
                   </div>
-                  <div className="px-5 mt-6">
+                  {/* <div className="px-5 mt-6">
                     <a
                       href="#"
                       className="block w-full px-4 py-3 font-medium text-center text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700"
@@ -122,7 +119,7 @@ export default function Navbar() {
                         Login
                       </a>
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </Popover.Panel>

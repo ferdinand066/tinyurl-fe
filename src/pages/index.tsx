@@ -115,33 +115,34 @@ export default function Home() {
             <div className="lg:grid lg:grid-cols-2 lg:gap-8">
               <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
                 <div className="lg:py-24">
-                  <a
-                    href="#"
-                    className="inline-flex items-center p-1 pr-2 text-white bg-black rounded-full sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
-                  >
-                    <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full">
-                      We're hiring
-                    </span>
-                    <span className="ml-4 text-sm">
-                      Visit our careers page
-                    </span>
-                    <ChevronRightIcon
-                      className="w-5 h-5 ml-2 text-gray-500"
-                      aria-hidden="true"
-                    />
-                  </a>
                   <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
                     <span className="block">A better way to</span>
                     <span className="block pb-3 text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5">
-                      ship web apps
+                      reach more people
                     </span>
                   </h1>
                   <p className="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui
-                    irure qui Lorem cupidatat commodo. Elit sunt amet fugiat
-                    veniam occaecat fugiat.
+                    With URL shorteners, any long and unwieldy website address can be reduced to just a few characters in the click of a button.
                   </p>
-                  <div className="mt-10 sm:mt-12">
+                  <div className='grid grid-cols-2 gap-4 mt-10 sm:mt-12'>
+                    <button
+                      type="submit"
+                      className="block w-full px-4 py-3 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
+                    >
+                      Try tiny url
+                    </button>
+                    <button
+                      type="submit"
+                      className="transition-all bg-white rounded-md opacity-90 hover:opacity-100"
+                    >
+                      <span
+                        className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-cyan-600"
+                      >
+                        Try rename url
+                      </span>
+                    </button>
+                  </div>
+                  {/* <div className="mt-10 sm:mt-12">
                     <form
                       action="#"
                       className="sm:max-w-xl sm:mx-auto lg:mx-0"
@@ -167,16 +168,8 @@ export default function Home() {
                           </button>
                         </div>
                       </div>
-                      <p className="mt-3 text-sm text-gray-300 sm:mt-4">
-                        Start your free 14-day trial, no credit card
-                        necessary. By providing your email, you agree to our{' '}
-                        <a href="#" className="font-medium text-white">
-                          terms or service
-                        </a>
-                        .
-                      </p>
                     </form>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
@@ -184,7 +177,7 @@ export default function Home() {
                   {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
                   <img
                     className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                    src="/img/component-images/cloud-illustration-teal-cyan.svg"
+                    src="./assets/Illustration Social Media.png"
                     alt=""
                   />
                 </div>
@@ -193,45 +186,17 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Feature section with screenshot */}
-        <div className="relative pt-16 bg-gray-50 sm:pt-24 lg:pt-32">
-          <div className="max-w-md px-4 mx-auto text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
-            <div>
-              <h2 className="text-base font-semibold tracking-wider uppercase text-cyan-600">
-                Serverless
-              </h2>
-              <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                No server? No problem.
-              </p>
-              <p className="mx-auto mt-5 text-xl text-gray-500 max-w-prose">
-                Phasellus lorem quam molestie id quisque diam aenean nulla
-                in. Accumsan in quis quis nunc, ullamcorper malesuada.
-                Eleifend condimentum id viverra nulla.
-              </p>
-            </div>
-            <div className="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
-              <img
-                className="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-                src="/img/component-images/green-project-app-screenshot.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-
         {/* Feature section with grid */}
         <div className="relative py-16 bg-white sm:py-24 lg:py-32">
           <div className="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
             <h2 className="text-base font-semibold tracking-wider uppercase text-cyan-600">
-              Deploy faster
+              Short Link Benefit
             </h2>
             <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Everything you need to deploy your app
+              Everything you get from shortening your url
             </p>
             <p className="mx-auto mt-5 text-xl text-gray-500 max-w-prose">
-              Phasellus lorem quam molestie id quisque diam aenean nulla in.
-              Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-              condimentum id viverra nulla.
+              What you get is more than you think.
             </p>
             <div className="mt-12">
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -271,10 +236,10 @@ export default function Home() {
                 className="absolute inset-x-0 top-0 bg-white h-1/2 lg:hidden"
               />
               <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
-                <div className="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+                <div className="relative overflow-visible shadow-xl bg-gradient-to-r from-teal-500 to-cyan-600 aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
                   <img
                     className="object-cover lg:h-full lg:w-full"
-                    src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+                    src="./assets/Advantage.svg"
                     alt=""
                   />
                 </div>
@@ -293,147 +258,18 @@ export default function Home() {
                       <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                     </svg>
                     <p className="mt-6 text-2xl font-medium text-white">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit. Sed urna nulla vitae laoreet augue. Amet feugiat
-                      est integer dolor auctor adipiscing nunc urna, sit.
+                      A good URL shortener (a.k.a. link shortener) lets you do two things: 1. Share links that don’t use too many characters. 2. Measure performance.
                     </p>
                   </div>
                   <footer className="mt-6">
                     <p className="text-base font-medium text-white">
-                      Judith Black
+                      Stacey McLachlan
                     </p>
                     <p className="text-base font-medium text-cyan-100">
-                      CEO at PureInsights
+                      March 31, 2021
                     </p>
                   </footer>
                 </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Blog section */}
-        <div className="relative py-16 bg-gray-50 sm:py-24 lg:py-32">
-          <div className="relative">
-            <div className="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-              <h2 className="text-base font-semibold tracking-wider uppercase text-cyan-600">
-                Learn
-              </h2>
-              <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Helpful Resources
-              </p>
-              <p className="mx-auto mt-5 text-xl text-gray-500 max-w-prose">
-                Phasellus lorem quam molestie id quisque diam aenean nulla
-                in. Accumsan in quis quis nunc, ullamcorper malesuada.
-                Eleifend condimentum id viverra nulla.
-              </p>
-            </div>
-            <div className="grid max-w-md gap-8 px-4 mx-auto mt-12 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">
-              {blogPosts.map((post) => (
-                <div
-                  key={post.id}
-                  className="flex flex-col overflow-hidden rounded-lg shadow-lg"
-                >
-                  <div className="flex-shrink-0">
-                    <img
-                      className="object-cover w-full h-48"
-                      src={post.imageUrl}
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex flex-col justify-between flex-1 p-6 bg-white">
-                    <div className="flex-1">
-                      <p className="text-sm font-medium text-cyan-600">
-                        <a
-                          href={post.category.href}
-                          className="hover:underline"
-                        >
-                          {post.category.name}
-                        </a>
-                      </p>
-                      <a href={post.href} className="block mt-2">
-                        <p className="text-xl font-semibold text-gray-900">
-                          {post.title}
-                        </p>
-                        <p className="mt-3 text-base text-gray-500">
-                          {post.preview}
-                        </p>
-                      </a>
-                    </div>
-                    <div className="flex items-center mt-6">
-                      <div className="flex-shrink-0">
-                        <a href={post.author.href}>
-                          <img
-                            className="w-10 h-10 rounded-full"
-                            src={post.author.imageUrl}
-                            alt={post.author.name}
-                          />
-                        </a>
-                      </div>
-                      <div className="ml-3">
-                        <p className="text-sm font-medium text-gray-900">
-                          <a
-                            href={post.author.href}
-                            className="hover:underline"
-                          >
-                            {post.author.name}
-                          </a>
-                        </p>
-                        <div className="flex space-x-1 text-sm text-gray-500">
-                          <time dateTime={post.datetime}>{post.date}</time>
-                          <span aria-hidden="true">&middot;</span>
-                          <span>{post.readingLength} read</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="relative bg-gray-900">
-          <div className="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
-            <img
-              className="object-cover w-full h-full"
-              src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&sat=-100"
-              alt=""
-            />
-            <div
-              aria-hidden="true"
-              className="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-600"
-              style={{ mixBlendMode: 'multiply' }}
-            />
-          </div>
-          <div className="relative max-w-md px-4 py-12 mx-auto sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32">
-            <div className="md:ml-auto md:w-1/2 md:pl-10">
-              <h2 className="text-base font-semibold tracking-wider text-gray-300 uppercase">
-                Award winning support
-              </h2>
-              <p className="mt-2 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-                We’re here to help
-              </p>
-              <p className="mt-3 text-lg text-gray-300">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
-                egestas tempus tellus etiam sed. Quam a scelerisque amet
-                ullamcorper eu enim et fermentum, augue. Aliquet amet
-                volutpat quisque ut interdum tincidunt duis.
-              </p>
-              <div className="mt-8">
-                <div className="inline-flex rounded-md shadow">
-                  <a
-                    href="#"
-                    className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-gray-900 bg-white border border-transparent rounded-md hover:bg-gray-50"
-                  >
-                    Visit the help center
-                    <ExternalLinkIcon
-                      className="w-5 h-5 ml-3 -mr-1 text-gray-400"
-                      aria-hidden="true"
-                    />
-                  </a>
-                </div>
               </div>
             </div>
           </div>
