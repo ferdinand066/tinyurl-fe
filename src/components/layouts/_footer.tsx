@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-50" aria-labelledby="footerHeading">
+    <footer className="mt-auto bg-gray-50" aria-labelledby="footerHeading">
       <h2 id="footerHeading" className="sr-only">
         Footer
       </h2>

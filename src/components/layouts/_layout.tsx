@@ -12,10 +12,14 @@ export default function Layout({ children }: { children: ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="bg-white">
-        <div className="relative overflow-hidden">
-          <Navbar />
-          <main>{children}</main>
+      <div className="h-screen overflow-auto bg-white">
+        <div className="relative flex flex-col justify-between h-full">
+          <div>
+            <Navbar />
+            <div className='flex-1'>
+              {children}
+            </div>
+          </div>
           <Footer />
         </div>
       </div>
