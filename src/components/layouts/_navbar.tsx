@@ -10,7 +10,7 @@ const ccFont = Itim({ subsets: ['latin'], weight: '400' });
 
 const navigation = [
   { name: 'Tiny Url', href: PAGES.TINY_URL.INDEX },
-  { name: 'Rename Url', href: '#' },
+  { name: 'Rename Url', href: PAGES.RENAME_URL.INDEX },
 ]
 export default function Navbar() {
   return (

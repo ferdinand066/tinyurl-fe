@@ -5,5 +5,11 @@ export const PAGES = {
     SHOW: function(id: string){
       return `tny/${id}`
     }
+  },
+  RENAME_URL: {
+    INDEX: 'rnm',
+    SHOW: function(id: string){
+      return `rnm/${id}`
+    }
   }
 }

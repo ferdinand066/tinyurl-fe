@@ -7,9 +7,4 @@ export class TinyUrlIndexHandlers {
   static async handleCreateTinyUrl(body: TinyUrlFormData): Promise<TinyUrl>{
     return await TinyUrlServices._createTinyUrl(body);
   }
-
-  static copyText(str: string){
-    navigator.clipboard.writeText(str);
-    toast.success(`Copied the text: ${str}`);
-  }
 }
