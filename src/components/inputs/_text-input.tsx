@@ -1,7 +1,7 @@
 import FormErrorMessage from './_form-error-message'
 
 export default function TextInput(props: any) {
-  const { setValue, errors, className, label, prefix, ...rest } = props
+  const { setValue, errors, className, label, prefix, onChange, ...rest } = props
   const { name, id, register } = rest
 
   return (
@@ -17,7 +17,11 @@ export default function TextInput(props: any) {
           <input
             {...rest}
             {...register}
-            onChange={(e) => setValue(name, e.target.value)}
+            onChange={(e) => {
+              setValue(name, e.target.value);
+              if (!onChange) return;
+              onChange(e)
+            }}
             className={
               `flex-1 block w-full focus:ring-cyan-500 focus:border-cyan-500 min-w-0 sm:text-sm border-gray-300 px-4 py-3 text-base text-gray-900 placeholder-gray-500 border-0 focus:outline-none focus:ring-2 focus:ring-offset-gray-900 ${
                 prefix

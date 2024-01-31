@@ -11,5 +11,8 @@ export const PAGES = {
     SHOW: function(id: string){
       return `rnm/${id}`
     }
+  },
+  QR_CODE_URL: {
+    INDEX: 'qr',
   }
 }
